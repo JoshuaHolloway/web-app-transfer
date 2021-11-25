@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,7 @@
   },
   "homepage": "https://github.com/JoshuaHolloway/web-app-transfer#readme",
   "devDependencies": {
+    "@types/dotenv-safe": "^8.1.2",
     "@types/node": "^16.11.10",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
@@ -26,9 +32,13 @@
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
     "prettier": "^2.5.0",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^3.12.0",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "dotenv-safe": "^8.2.0"
   }
 }
