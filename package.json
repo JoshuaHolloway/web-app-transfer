@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/dist/index.js"
+    "dev": "nodemon _backend/dist/index.js",
+    "tsc": "tsc -w"
   },
   "author": "josh holloway",
   "license": "ISC",
