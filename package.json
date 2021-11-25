@@ -4,22 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon _backend/dist/index.js",
-    "tsc": "tsc -w",
-    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaHolloway/web-app.git"
   },
   "author": "josh holloway",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
+  "bugs": {
+    "url": "https://github.com/JoshuaHolloway/web-app-transfer/issues"
   },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.10",
-    "cross-env": "^7.0.3",
-    "eslint": "7.32.0",
-    "jest": "27.0.6",
-    "nodemon": "^2.0.15"
-  }
+  "homepage": "https://github.com/JoshuaHolloway/web-app-transfer#readme"
 }
