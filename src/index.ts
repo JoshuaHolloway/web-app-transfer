@@ -1,6 +1,6 @@
 import dotenv from 'dotenv-safe';
-import add from '@src/math/add';
+import f from '@src/functions/f';
 
 dotenv.config();
 
-console.log(add(1, 2));
+console.log(f(2, 3, 4));
