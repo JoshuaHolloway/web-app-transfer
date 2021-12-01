@@ -6,10 +6,10 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'plugin:@typescript-eslint/recommended',
+    // 'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'airbnb',
+    // 'airbnb',
     'plugin:prettier/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',

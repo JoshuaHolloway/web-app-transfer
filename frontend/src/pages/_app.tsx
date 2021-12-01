@@ -1,5 +1,5 @@
 // _app.tsx
-import '@styles/globals.css';
+import '@style/globals.css';
 
 import { FC } from 'react';
 import { AppProps } from 'next/app';
