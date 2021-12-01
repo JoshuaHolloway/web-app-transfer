@@ -7,8 +7,11 @@ const Home: FC = () => {
       Hello World (from Josh)
       <button
         onClick={async () => {
+          const endpoint = '/api/products';
+          const url = `${process.env.NEXT_PUBLIC_API_URL}${endpoint}`;
+
           try {
-            const res = await fetch('http://localhost:9000/api/products');
+            const res = await fetch(url);
             console.log('res: ', res);
 
             const data = await res.json();
